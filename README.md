@@ -1,8 +1,9 @@
-# Nuxt Auth with Passport.js (NAP)
+# Nuxt Auth with Passport.js Example Code (NAP)
 
 ## Setting
 
 - .env
+
 ## Nuxt Auth
 
 - pages/login.vue

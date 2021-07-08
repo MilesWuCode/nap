@@ -38,6 +38,7 @@
     <div class="flex items-baseline space-x-4">
       <a class="px-4 py-2 font-bold text-white bg-red-500 rounded" href="/passport/google">Google</a>
       <a class="px-4 py-2 font-bold text-white bg-blue-600 rounded" href="/passport/facebook">Facebook</a>
+      <a class="px-4 py-2 font-bold text-white bg-black rounded" href="/passport/apple">Apple(wip)</a>
       <a class="px-4 py-2 font-bold text-white bg-green-600 rounded" href="/passport/line">Line</a>
     </div>
   </div>

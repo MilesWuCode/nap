@@ -89,23 +89,6 @@ export default {
           user: { url: '/api/auth/user', method: 'get' },
         },
       },
-      line: {
-        scheme: 'local',
-        token: {
-          property: 'access_token',
-          maxAge: 60 * 60 * 24 * 30,
-          global: true,
-          type: 'Bearer',
-        },
-        user: {
-          property: 'user',
-        },
-        endpoints: {
-          login: false,
-          logout: { url: '/passport/line/logout', method: 'post' },
-          user: { url: '/passport/line/user', method: 'get' },
-        },
-      },
       google: {
         scheme: 'local',
         token: {
@@ -139,7 +122,41 @@ export default {
           logout: { url: '/passport/facebook/logout', method: 'post' },
           user: { url: '/passport/facebook/user', method: 'get' },
         },
-      }
+      },
+      apple: {
+        scheme: 'local',
+        token: {
+          property: 'access_token',
+          maxAge: 60 * 60 * 24 * 30,
+          global: true,
+          type: 'Bearer',
+        },
+        user: {
+          property: 'user',
+        },
+        endpoints: {
+          login: false,
+          logout: { url: '/passport/apple/logout', method: 'post' },
+          user: { url: '/passport/apple/user', method: 'get' },
+        },
+      },
+      line: {
+        scheme: 'local',
+        token: {
+          property: 'access_token',
+          maxAge: 60 * 60 * 24 * 30,
+          global: true,
+          type: 'Bearer',
+        },
+        user: {
+          property: 'user',
+        },
+        endpoints: {
+          login: false,
+          logout: { url: '/passport/line/logout', method: 'post' },
+          user: { url: '/passport/line/user', method: 'get' },
+        },
+      },
     }
   },
 
@@ -147,7 +164,7 @@ export default {
     { path: '/api/auth', handler: '~/server/local.js' },
     { path: '/passport/google', handler: '~/server/google.js' },
     { path: '/passport/facebook', handler: '~/server/facebook.js' },
-    // { path: '/passport/apple', handler: '~/server/apple.js' },
+    { path: '/passport/apple', handler: '~/server/apple.js' },
     { path: '/passport/line', handler: '~/server/line.js' },
   ],
 
