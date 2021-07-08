@@ -65,14 +65,9 @@ export default {
             data: this.login,
           })
           .then(() => {
+            // Manual redirect
             this.$router.push(redirect)
           })
-
-        // bad-fix-bug
-        // window.location.reload()
-
-        // can-working-redirect-to:/private
-        // await this.$auth.setUserToken('abc', 'xyz')
       } catch (err) {
         console.log(err)
       }
