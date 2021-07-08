@@ -1,5 +1,8 @@
 # Nuxt Auth with Passport.js (NAP)
 
+## Setting
+
+- .env
 ## Nuxt Auth
 
 - pages/login.vue
