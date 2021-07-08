@@ -1,5 +1,5 @@
 <template>
-  <a href="#" @click.prevent="logout">Logout</a>
+  <a v-if="$auth.loggedIn" href="#" @click.prevent="logout">Logout</a>
 </template>
 
 <script>
