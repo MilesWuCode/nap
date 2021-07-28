@@ -27,7 +27,8 @@ passport.use(
       teamID: process.env.APPLE_TEAM_ID,
       keyID: process.env.APPLE_KEY_ID,
       callbackURL: process.env.APPLE_CALLBACK_URL,
-      profileFields: ['id', 'displayName', 'photos', 'email'],
+      privateKeyLocation: "",
+      passReqToCallback: true,
     },
     function (req, accessToken, refreshToken, idToken, profile, done) {
       // wip

@@ -162,7 +162,7 @@ export default {
 
   serverMiddleware: [
     { path: '/api/auth', handler: '~/server/local.js' },
-    { path: '/passport/google', handler: '~/server/google.js' },
+    { path: '/login/apple', handler: '~/server/google.js' },
     { path: '/passport/facebook', handler: '~/server/facebook.js' },
     { path: '/passport/apple', handler: '~/server/apple.js' },
     { path: '/passport/line', handler: '~/server/line.js' },
@@ -170,9 +170,11 @@ export default {
 
   // for Facebook Test
   // server: {
+  //   host: '0.0.0.0',
+  //   port: 443,
   //   https: {
-  //     key: fs.readFileSync(path.resolve(__dirname, 'localhost.key')),
-  //     cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt'))
+  //     key: fs.readFileSync(path.resolve(__dirname, 'miles-dev.key')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, 'miles-dev.crt'))
   //   }
   // },
 }
